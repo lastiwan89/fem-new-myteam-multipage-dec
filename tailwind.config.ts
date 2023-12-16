@@ -33,6 +33,12 @@ const config: Config = {
       semibold: "600",
       bold: "700",
     },
+    screens: {
+      md: "768px" /* tablet */,
+      lg: "1024px" /* laptop */,
+      xl: "1280px" /* desktop */,
+      "2xl": "1536px" /* large display */,
+    },
     extend: {
       backgroundImage: {
         home1: "url('/bg-pattern-home-1.svg')",
@@ -47,11 +53,11 @@ const config: Config = {
         contact: "url('/bg-pattern-contact-2.svg')",
       },
       lineHeight: {
-        "100": "100px",
-        "64": "56px",
-        "48": "48px",
-        "18": "28px",
-        "15": "25px",
+        "lh-100": "100px",
+        "lh-64": "56px",
+        "lh-48": "48px",
+        "lh-18": "28px",
+        "lh-15": "25px",
       },
     },
   },

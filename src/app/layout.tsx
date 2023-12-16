@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Livvic } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar/navbar";
 
 const livvic = Livvic({
   subsets: ["latin"],
@@ -19,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={livvic.className}>{children}</body>
+      <body className={livvic.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

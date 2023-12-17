@@ -6,7 +6,7 @@ export default function Logo() {
   const router = useRouter();
   return (
     <svg
-      className="fill-white cursor-pointer"
+      className="fill-white hover:fill-blue-rapture cursor-pointer"
       onClick={() => router.push("/")}
       xmlns="http://www.w3.org/2000/svg"
       width="160"

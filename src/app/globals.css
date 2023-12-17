@@ -16,6 +16,11 @@ body {
     @apply border-green-midnight text-green-midnight hover:text-white hover:bg-green-midnight;
   }
   /* custom background */
+  .custom-team-md {
+    background-image: url("/bg-pattern-home-3.svg");
+    background-repeat: no-repeat;
+    background-position: 117.5% 0%;
+  }
   .custom-home-ceo1 {
     background-color: #014d56;
     background-image: url("/bg-pattern-home-4-about-3.svg"),

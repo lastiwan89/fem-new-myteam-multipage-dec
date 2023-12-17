@@ -23,4 +23,10 @@ body {
     background-repeat: no-repeat;
     background-position: top left, bottom right;
   }
+  .custom-about-dir1 {
+    background-image: url("/bg-pattern-about-2-contact-1.svg"),
+      url("/bg-pattern-home-4-about-3.svg");
+    background-repeat: no-repeat;
+    background-position: -60% -5.3%, bottom right;
+  }
 }

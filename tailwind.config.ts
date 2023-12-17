@@ -59,7 +59,7 @@ const config: Config = {
       // bg position (lr & ud)
       backgroundPosition: {
         "top-50p": "160% 0%",
-        "top-bottom-home": "top bottom-right",
+        "bottom-r-50": "160% 150%",
       },
       lineHeight: {
         "lh-100": "100px",

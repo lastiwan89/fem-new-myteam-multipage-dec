@@ -6,11 +6,11 @@ import React from "react";
 export default function About() {
   return (
     <main>
-      <section className="bg-green-midnight pt-20 pb-28 px-6 bg-about1 bg-no-repeat bg-bottom-r-50">
-        <h1 className="text-center text-white text-fs-40 leading-lh-40 font-bold mb-4">
+      <section className="flex flex-col items-center bg-green-midnight md:about-hero-md pt-20 pb-28 px-6 bg-about1 bg-no-repeat bg-bottom-r-50">
+        <h1 className="text-center text-white text-fs-40 leading-lh-40 md:text-fs-64 md:leading-lh-56 font-bold mb-4 md:mb-6">
           About
         </h1>
-        <p className="text-center text-white font-semibold text-fs-15 leading-lh-28">
+        <p className="text-center text-white font-semibold text-fs-15 leading-lh-28  md:max-w-[457px]">
           We help companies build dynamic teams made up of top global talent.
           Using our network of passionate professionals we drive innovation and
           deliver incredible outcomes. Talented, diverse teams shape the best
@@ -18,11 +18,11 @@ export default function About() {
         </p>
       </section>
       {/* directors */}
-      <section className="custom-about-dir1 px-6 py-28 bg-green-jungle">
+      <section className="custom-about-dir1 px-6 py-28 md:custom-dir-md bg-green-jungle w-full flex flex-col items-center">
         <h3 className="text-center text-white text-fs-32 leading-lh-32 font-bold mb-12">
           Meet the directors
         </h3>
-        <div>
+        <div className="md:flex md:flex-wrap md:gap-6 md:justify-center">
           {DIRECTORS.map((item) => {
             let quotes = item.quotes;
             if (!quotes) {
@@ -44,7 +44,7 @@ export default function About() {
                   <p className="italic text-white text-fs-15 leading-lh-25 font-medium mb-6">
                     {item.job}
                   </p>
-                  <div className="bg-light-coral p-5 rounded-full absolute -bottom-7">
+                  <div className="bg-light-coral cursor-pointer hover:bg-blue-rapture  hover:-rotate-45 p-5 rounded-full absolute -bottom-7">
                     <svg
                       className=" fill-green-sacramento rotate-45"
                       xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@ export default function About() {
                       alt="linkdln icon"
                     />
                   </div>
-                  <div className="bg-blue-rapture p-5 rounded-full absolute -bottom-7">
+                  <div className="bg-blue-rapture p-5 rounded-full absolute -bottom-7 hover:bg-light-coral hover:-rotate-45 cursor-pointer">
                     <svg
                       className=" fill-green-sacramento"
                       xmlns="http://www.w3.org/2000/svg"
@@ -105,11 +105,11 @@ export default function About() {
         </div>
       </section>
       {/* clients sections */}
-      <section className="bg-green-sacramento about-bg3 px-6 py-24">
+      <section className="bg-green-sacramento about-bg3 px-6 md:px-9 py-24 flex flex-col items-center">
         <h3 className="text-center text-fs-32 leading-lh-32 font-bold text-white">
           Some of our clients
         </h3>
-        <div className="flex flex-col items-center gap-14 mt-16">
+        <div className="flex flex-col md:flex-row items-center gap-14 mt-16">
           {CLIENT.map((item) => (
             <div key={item.key}>
               <Image

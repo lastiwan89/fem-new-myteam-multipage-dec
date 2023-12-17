@@ -1,3 +1,4 @@
+import GetStarted from "@/components/footer/get-started";
 import { CLIENT, DIRECTORS } from "@/constant";
 import Image from "next/image";
 import React from "react";
@@ -122,6 +123,7 @@ export default function About() {
           ))}
         </div>
       </section>
+      <GetStarted />
     </main>
   );
 }

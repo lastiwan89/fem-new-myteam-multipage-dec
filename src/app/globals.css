@@ -39,4 +39,9 @@ body {
     background-repeat: no-repeat;
     background-position: 160% 145%;
   }
+  .get-contact {
+    background-image: url("/bg-pattern-home-6-about-5.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 113%;
+  }
 }

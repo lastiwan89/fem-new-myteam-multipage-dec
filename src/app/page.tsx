@@ -1,3 +1,4 @@
+import GetStarted from "@/components/footer/get-started";
 import { CEO, TEAMS } from "@/constant";
 import Image from "next/image";
 import React from "react";
@@ -83,6 +84,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <GetStarted />
     </main>
   );
 }

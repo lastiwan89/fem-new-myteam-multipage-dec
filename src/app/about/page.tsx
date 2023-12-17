@@ -1,4 +1,4 @@
-import { DIRECTORS } from "@/constant";
+import { CLIENT, DIRECTORS } from "@/constant";
 import Image from "next/image";
 import React from "react";
 
@@ -101,6 +101,25 @@ export default function About() {
               );
             }
           })}
+        </div>
+      </section>
+      {/* clients sections */}
+      <section className="bg-green-sacramento about-bg3 px-6 py-24">
+        <h3 className="text-center text-fs-32 leading-lh-32 font-bold text-white">
+          Some of our clients
+        </h3>
+        <div className="flex flex-col items-center gap-14 mt-16">
+          {CLIENT.map((item) => (
+            <div key={item.key}>
+              <Image
+                className="max-w-100% h-auto"
+                src={`${item.url}`}
+                alt={`${item.label} icon`}
+                width={140}
+                height={24}
+              />
+            </div>
+          ))}
         </div>
       </section>
     </main>

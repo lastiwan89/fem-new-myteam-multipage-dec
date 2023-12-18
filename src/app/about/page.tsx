@@ -6,7 +6,7 @@ import React from "react";
 export default function About() {
   return (
     <main>
-      <section className="flex flex-col items-center bg-green-midnight md:about-hero-md pt-20 pb-28 px-6 bg-about1 bg-no-repeat bg-bottom-r-50">
+      <section className="flex flex-col items-center bg-green-midnight about-hero md:about-hero-md pt-20 pb-28 px-6 bg-about1 bg-no-repeat bg-bottom-r-50">
         <h1 className="text-center text-white text-fs-40 leading-lh-40 md:text-fs-64 md:leading-lh-56 font-bold mb-4 md:mb-6">
           About
         </h1>
@@ -105,7 +105,7 @@ export default function About() {
         </div>
       </section>
       {/* clients sections */}
-      <section className="bg-green-sacramento about-bg3 px-6 md:px-9 py-24 flex flex-col items-center">
+      <section className="bg-green-sacramento about-bg3 md:about-bg3-md px-6 md:px-9 py-24 flex flex-col items-center">
         <h3 className="text-center text-fs-32 leading-lh-32 font-bold text-white">
           Some of our clients
         </h3>

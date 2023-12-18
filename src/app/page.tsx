@@ -18,7 +18,7 @@ export default function Home() {
         </p>
       </section>
       {/* Team Section */}
-      <section className="bg-home3 bg-no-repeat md:custom-team-md bg-top-50p bg-green-sacramento px-6 py-16 md:px-24 md:py-28">
+      <section className="bg-no-repeat custom-team-md bg-green-sacramento px-6 py-16 md:px-24 md:py-28">
         <div className="w-[240px] md:w-[445px]">
           <div className="bg-light-coral h-1 w-12"></div>
           <h1 className="mt-8 text-white text-fs-32 leading-lh-32 font-bold">

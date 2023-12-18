@@ -56,11 +56,6 @@ const config: Config = {
         contact: "url('/bg-pattern-contact-2.svg')",
         quote: "url('/icon-quotes.svg')",
       },
-      // bg position (lr & ud)
-      backgroundPosition: {
-        "top-50p": "160% 0%",
-        "bottom-r-50": "160% 150%",
-      },
       lineHeight: {
         "lh-100": "100px",
         "lh-56": "56px",

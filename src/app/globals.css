@@ -19,7 +19,7 @@ body {
   .custom-team-md {
     background-image: url("/bg-pattern-home-3.svg");
     background-repeat: no-repeat;
-    background-position: 117.5% 0%;
+    background-position: top 0 right -100px;
   }
   .custom-home-ceo1 {
     background-color: #014d56;
@@ -28,36 +28,56 @@ body {
     background-repeat: no-repeat;
     background-position: top left, bottom right;
   }
+  .about-hero {
+    background-image: url("/bg-pattern-about-1-mobile-nav-1.svg");
+    background-repeat: no-repeat;
+    background-position: bottom -100px right -100px;
+  }
   .about-hero-md {
     background-image: url("/bg-pattern-about-1-mobile-nav-1.svg");
     background-repeat: no-repeat;
-    background-position: 117.5% 100%;
+    background-position: bottom 0 right -100px;
   }
   .custom-about-dir1 {
     background-image: url("/bg-pattern-about-2-contact-1.svg"),
       url("/bg-pattern-home-4-about-3.svg");
     background-repeat: no-repeat;
-    background-position: -60% -5.3%, bottom right;
+    background-position: top -100px left -100px, bottom right;
   }
   .custom-dir-md {
     background-image: url("/bg-pattern-about-2-contact-1.svg"),
       url("/bg-pattern-home-4-about-3.svg");
     background-repeat: no-repeat;
-    background-position: -18% 0%, bottom right;
+    background-position: top 0 left -100px, bottom right;
   }
   .about-bg3 {
     background-image: url("/bg-pattern-about-4.svg");
     background-repeat: no-repeat;
-    background-position: -58.3% -21%;
+    background-position: top -100px left -100px;
+  }
+  .about-bg3-md {
+    background-image: url("/bg-pattern-about-4.svg");
+    background-repeat: no-repeat;
+    background-position: top -100px left 0;
   }
   .form-bg1 {
     background-image: url("/bg-pattern-contact-2.svg");
     background-repeat: no-repeat;
-    background-position: 160% 145%;
+    background-position: bottom -110px right -100px;
   }
-  .get-contact {
+  .get-started {
     background-image: url("/bg-pattern-home-6-about-5.svg");
     background-repeat: no-repeat;
-    background-position: 0% 113%;
+    background-position: bottom -21px left 0;
+  }
+  .contact-md1 {
+    background-image: url("/bg-pattern-about-2-contact-1.svg");
+    background-repeat: no-repeat;
+    background-position: top 35px left -100px;
+  }
+  .contact-md2 {
+    background-image: url("/bg-pattern-contact-2.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 0 right -100px;
   }
 }

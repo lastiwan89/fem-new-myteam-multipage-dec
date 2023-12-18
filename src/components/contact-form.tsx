@@ -35,7 +35,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-green-midnight p-6 pb-24 form-bg1"
+      className="bg-green-midnight p-6 pb-24 md:px-32 form-bg1 md:contact-md2"
     >
       <div className="flex flex-col gap-y-2 mb-6">
         <input

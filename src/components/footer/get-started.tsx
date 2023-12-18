@@ -3,7 +3,7 @@ import Button from "../button";
 
 export default function GetStarted() {
   return (
-    <main className="p-20 pb-24 md:px-12 md:py-20 bg-light-coral flex flex-col md:flex-row md:justify-around items-center get-started">
+    <main className="p-20 pb-24 md:px-12 md:py-20 lg:py-16 lg:px-32 bg-light-coral flex flex-col md:flex-row md:justify-around items-center get-started">
       <h1 className="text-center text-green-sacramento text-fs-32 leading-lh-32 font-bold my-6">
         Ready to get started?
       </h1>

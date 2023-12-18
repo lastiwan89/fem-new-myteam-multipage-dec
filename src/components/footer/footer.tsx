@@ -6,9 +6,9 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-green-sacramento py-16 px-14 flex flex-col">
-      <div className="flex flex-col md:flex-row md:items-start md:justify-between">
-        <div className="flex flex-col gap-6 md:gap-14 items-center md:items-start md:justify-between">
+    <footer className="bg-green-sacramento py-16 lg:py-12 px-14 flex flex-col lg:flex-row lg:justify-between">
+      <div className="flex flex-col md:flex-row md:items-start md:justify-between lg:justify-between gap-10">
+        <div className="flex flex-col gap-6 lg:gap-10 md:gap-14 items-center md:items-start md:justify-between">
           <Logo />
           <div className="flex gap-6">
             <Link className="text-white" href="/">
@@ -19,7 +19,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center mt-6 mb-10 md:items-end">
+        <div className="flex flex-col items-center mt-6 mb-10 md:items-end lg:items-start lg:mb-0 lg:mt-0 lg:gap-1">
           {ADDRESS.map((item) => (
             <p
               className="text-white opacity-60 text-fs-15 leading-lh-25 font-semibold"
@@ -30,8 +30,8 @@ export default function Footer() {
           ))}
         </div>
       </div>
-      <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-        <div className="flex gap-5 items-center justify-center my-4">
+      <div className="flex flex-col md:flex-row lg:flex-col lg:items-end lg:justify-between md:justify-between md:items-center">
+        <div className="flex gap-5 items-center justify-center my-4 lg:my-0">
           {SOCIAL_ICONS.map((item) => (
             <Image
               key={item.key}

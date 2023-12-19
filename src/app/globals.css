@@ -16,6 +16,19 @@ body {
     @apply border-green-midnight text-green-midnight hover:text-white hover:bg-green-midnight;
   }
   /* custom background */
+  .home-hero {
+    background-image: url("/bg-pattern-home-2.svg"),
+      url("/bg-pattern-home-1.svg");
+    background-repeat: no-repeat;
+    background-position:
+      bottom 0 right 120px,
+      left -100px center;
+  }
+  .home-hero-sm {
+    background-image: url("/bg-pattern-home-2.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
   .custom-team-md {
     background-image: url("/bg-pattern-home-3.svg");
     background-repeat: no-repeat;
@@ -26,7 +39,9 @@ body {
     background-image: url("/bg-pattern-home-4-about-3.svg"),
       url("/bg-pattern-home-5.svg");
     background-repeat: no-repeat;
-    background-position: top left, bottom right;
+    background-position:
+      top left,
+      bottom right;
   }
   .about-hero {
     background-image: url("/bg-pattern-about-1-mobile-nav-1.svg");
@@ -42,13 +57,17 @@ body {
     background-image: url("/bg-pattern-about-2-contact-1.svg"),
       url("/bg-pattern-home-4-about-3.svg");
     background-repeat: no-repeat;
-    background-position: top -100px left -100px, bottom right;
+    background-position:
+      top -100px left -100px,
+      bottom right;
   }
   .custom-dir-md {
     background-image: url("/bg-pattern-about-2-contact-1.svg"),
       url("/bg-pattern-home-4-about-3.svg");
     background-repeat: no-repeat;
-    background-position: top 0 left -100px, bottom right;
+    background-position:
+      top 0 left -100px,
+      bottom right;
   }
   .about-bg3 {
     background-image: url("/bg-pattern-about-4.svg");

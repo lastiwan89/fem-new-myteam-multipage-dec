@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <main>
-      <section className="bg-green-midnight p-6 md:px-32 md:contact-md1">
-        <div className="py-10 md:py-8">
-          <h1 className="text-center text-white text-fs-40 leading-lh-40 font-bold md:text-fs-64 md:leading-lh-56">
+    <main className="lg:flex lg:justify-between">
+      <section className="bg-green-midnight p-6 lg:p-0 md:px-32 md:contact-md1 lg:pl-40 lg:py-28">
+        <div className="py-10 md:py-8 lg:py-0">
+          <h1 className="text-center text-white text-fs-40 lg:text-fs-64 lg:leading-lh-100 lg:text-start leading-lh-40 font-bold md:text-fs-64 md:leading-lh-56">
             Contact
           </h1>
-          <h3 className="text-center text-light-coral text-fs-32 leading-lh-48 font-bold mt-4">
+          <h3 className="text-center lg:text-start text-light-coral text-fs-32 leading-lh-48 font-bold mt-4">
             Ask us about
           </h3>
         </div>

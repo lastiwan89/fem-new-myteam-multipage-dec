@@ -11,10 +11,16 @@ export default function Footer() {
         <div className="flex flex-col gap-6 lg:gap-10 md:gap-14 items-center md:items-start md:justify-between">
           <Logo />
           <div className="flex gap-6">
-            <Link className="text-white" href="/">
+            <Link
+              className="text-white text-fs-18 leading-lh-28 font-semibold hover:text-light-coral"
+              href="/"
+            >
               home
             </Link>
-            <Link className="text-white" href="/about">
+            <Link
+              className="text-white text-fs-18 leading-lh-28 font-semibold hover:text-light-coral"
+              href="/about"
+            >
               about
             </Link>
           </div>
@@ -34,6 +40,7 @@ export default function Footer() {
         <div className="flex gap-5 items-center justify-center my-4 lg:my-0">
           {SOCIAL_ICONS.map((item) => (
             <Image
+              className="text-white hover:text-light-coral cursor-pointer"
               key={item.key}
               src={`${item.url}`}
               width={24}

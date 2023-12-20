@@ -6,15 +6,15 @@ import React from "react";
 export default function About() {
   return (
     <main>
-      <section className="flex flex-col items-center bg-green-midnight about-hero md:about-hero-md pt-20 pb-28 px-6 bg-about1 bg-no-repeat bg-bottom-r-50 lg:flex-row lg:items-center">
-        <div className="px-40 lg:pl-40  lg:min-w-[50%]">
-          <h1 className="text-center lg:text-start text-white text-fs-40 leading-lh-40 md:text-fs-64 md:leading-lh-56 font-bold mb-4 md:mb-6">
+      <section className="flex flex-col items-center bg-green-midnight about-hero md:about-hero-md pt-20 pb-28 px-6 bg-about1 bg-no-repeat bg-bottom-r-50 lg:flex-row lg:justify-center">
+        <div className="px-40 lg:items-end lg:min-w-[50%]">
+          <h1 className="text-center lg:text-end text-white text-fs-40 leading-lh-40 md:text-fs-64 md:leading-lh-56 font-bold mb-4 md:mb-6">
             About
           </h1>
         </div>
         <div className="flex flex-col gap-8 lg:min-w-[50%]">
           <div className="hidden lg:block bg-light-coral h-1 w-12"></div>
-          <p className="text-center lg:text-start text-white font-semibold text-fs-15 leading-lh-28  md:max-w-[457px] lg:w-auto">
+          <p className="text-center lg:text-start text-white font-semibold text-fs-15 leading-lh-28  md:max-w-[457px] lg:w-full">
             We help companies build dynamic teams made up of top global talent.
             Using our network of passionate professionals we drive innovation
             and deliver incredible outcomes. Talented, diverse teams shape the
@@ -23,11 +23,11 @@ export default function About() {
         </div>
       </section>
       {/* directors */}
-      <section className="custom-about-dir1 px-6 lg:px-40 py-28 md:custom-dir-md bg-green-jungle w-full flex flex-col items-center">
+      <section className="custom-about-dir1 px-6  py-28 md:custom-dir-md bg-green-jungle w-full flex flex-col items-center">
         <h3 className="text-center text-white text-fs-32 leading-lh-32 lg:text-fs-48 lg:leading-lh-48 font-bold mb-12">
           Meet the directors
         </h3>
-        <div className="md:flex md:flex-wrap md:gap-6 md:justify-center">
+        <div className="md:flex md:flex-wrap md:gap-6 md:justify-center 2xl:px-20 3xl:px-40">
           {DIRECTORS.map((item) => {
             let quotes = item.quotes;
             if (!quotes) {

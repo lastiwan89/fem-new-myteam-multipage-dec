@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-green-midnight px-6 pt-20 pb-52 home-hero-sm lg:home-hero flex flex-col lg:flex-row items-center lg:px-40">
+      <section className="bg-green-midnight px-6 pt-20 pb-52 home-hero-sm lg:home-hero flex flex-col lg:flex-row lg:justify-center items-center lg:px-40">
         <div className="pr-14">
           <h1 className="text-center lg:text-start text-white font-bold text-fs-40 leading-lh-40 md:text-fs-64 md:leading-lh-56 md:w-[457px] lg:w-full px-14">
             Find the best <span className="text-light-coral">talent</span>
@@ -23,7 +23,7 @@ export default function Home() {
         </div>
       </section>
       {/* Team Section */}
-      <section className="bg-no-repeat custom-team-md bg-green-sacramento px-6 py-16 md:px-24 md:py-28 lg:flex lg:gap-28">
+      <section className="bg-no-repeat custom-team-md bg-green-sacramento px-6 py-16 md:px-24 md:py-28 lg:flex lg:justify-center lg:gap-28">
         <div className="w-[240px] md:w-[445px]">
           <div className="bg-light-coral h-1 w-12"></div>
           <h1 className="mt-8 text-white text-fs-32 leading-lh-32 font-bold">

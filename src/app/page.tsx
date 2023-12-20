@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-green-midnight px-6 pt-20 pb-52 home-hero-sm lg:home-hero flex flex-col lg:flex-row lg:justify-center items-center lg:px-40">
-        <div className="pr-14">
+      <section className="bg-green-midnight px-6 pt-20 pb-52 home-hero-sm lg:home-hero flex flex-col lg:flex-row justify-center items-center lg:px-40">
+        <div className="lg:pr-14 px-4">
           <h1 className="text-center lg:text-start text-white font-bold text-fs-40 leading-lh-40 md:text-fs-64 md:leading-lh-56 md:w-[457px] lg:w-full px-14">
             Find the best <span className="text-light-coral">talent</span>
           </h1>

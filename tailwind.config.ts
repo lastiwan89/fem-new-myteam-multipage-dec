@@ -40,7 +40,8 @@ const config: Config = {
       md: "768px" /* tablet */,
       lg: "1024px" /* laptop */,
       xl: "1280px" /* desktop */,
-      "2xl": "1536px" /* large display */,
+      "2xl": "1440px" /* large  */,
+      "3xl": "1536px" /* large display */,
     },
     extend: {
       backgroundImage: {

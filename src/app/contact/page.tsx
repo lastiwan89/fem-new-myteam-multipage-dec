@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <main className="lg:flex lg:justify-between">
+    <main className="lg:flex lg:justify-between max-w-2xl mx-auto">
       <section className="bg-green-midnight lg:min-w-[50%] p-6 lg:p-0 md:px-32 md:contact-md1 lg:pl-40 lg:py-28">
         <div className="py-10 md:py-8 lg:py-0">
           <h1 className="text-center text-white text-fs-40 lg:text-fs-64 lg:leading-lh-100 lg:text-start leading-lh-40 font-bold md:text-fs-64 md:leading-lh-56">

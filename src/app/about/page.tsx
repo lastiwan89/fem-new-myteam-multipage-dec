@@ -5,7 +5,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <main>
+    <main className="max-w-2xl mx-auto">
       <section className="flex flex-col items-center bg-green-midnight about-hero md:about-hero-md pt-20 pb-28 px-6 bg-about1 bg-no-repeat bg-bottom-r-50 lg:flex-row lg:justify-center">
         <div className="px-40 lg:items-end lg:min-w-[50%]">
           <h1 className="text-center lg:text-end text-white text-fs-40 leading-lh-40 md:text-fs-64 md:leading-lh-56 font-bold mb-4 md:mb-6">

@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <main>
+    <main className="max-w-2xl mx-auto">
       {/* Hero */}
       <section className="bg-green-midnight px-6 pt-20 pb-52 home-hero-sm lg:home-hero flex flex-col lg:flex-row justify-center items-center lg:px-40">
         <div className="lg:pr-14 px-4">

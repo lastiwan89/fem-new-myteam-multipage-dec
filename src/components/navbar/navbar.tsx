@@ -11,7 +11,7 @@ export default function Navbar() {
     setIsOpen((prev) => !prev);
   }
   return (
-    <nav className="flex justify-between items-center bg-green-midnight px-6 lg:px-14 py-10">
+    <nav className="flex max-w-2xl mx-auto justify-between items-center bg-green-midnight px-6 lg:px-14 py-10">
       <div className="flex items-center gap-12">
         <Logo />
         <NavLink />

@@ -67,6 +67,9 @@ const config: Config = {
         "lh-25": "25px",
         "lh-18": "18px",
       },
+      maxWidth: {
+        "2xl": "1920px",
+      },
     },
   },
   plugins: [],

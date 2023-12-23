@@ -50,7 +50,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="text-white text-center md:text-end text-fs-15 leading-lh-25 font-semibold opacity-60">
-          Copyright &copy; 2023. MoriChan DEV.
+          Copyright 2023. All Rights Reserved
         </p>
       </div>
     </footer>

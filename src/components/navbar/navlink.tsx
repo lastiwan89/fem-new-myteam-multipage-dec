@@ -5,13 +5,13 @@ export default function NavLink() {
   return (
     <ul className="hidden md:flex md:gap-10">
       <Link
-        className="text-white hover:text-light-coral text-fs-18 leading-lh-28 font-semibold"
+        className="text-fs-18 font-semibold leading-lh-28 text-white hover:text-light-coral"
         href="/"
       >
         home
       </Link>
       <Link
-        className="text-white hover:text-light-coral text-fs-18 leading-lh-28 font-semibold"
+        className="text-fs-18 font-semibold leading-lh-28 text-white hover:text-light-coral"
         href="/about"
       >
         about

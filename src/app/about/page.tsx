@@ -5,16 +5,16 @@ import React from "react";
 
 export default function About() {
   return (
-    <main className="max-w-2xl mx-auto">
-      <section className="flex flex-col items-center bg-green-midnight about-hero md:about-hero-md pt-20 pb-28 px-6 bg-about1 bg-no-repeat bg-bottom-r-50 lg:flex-row lg:justify-center">
-        <div className="px-40 lg:items-end lg:min-w-[50%]">
-          <h1 className="text-center lg:text-end text-white text-fs-40 leading-lh-40 md:text-fs-64 md:leading-lh-56 font-bold mb-4 md:mb-6">
+    <main className="mx-auto max-w-2xl">
+      <section className="about-hero md:about-hero-md bg-bottom-r-50 flex flex-col items-center bg-green-midnight bg-about1 bg-no-repeat px-6 pb-28 pt-20 lg:flex-row lg:justify-center">
+        <div className="px-40 lg:min-w-[50%] lg:items-end">
+          <h1 className="mb-4 text-center text-fs-40 font-bold leading-lh-40 text-white md:mb-6 md:text-fs-64 md:leading-lh-56 lg:text-end">
             About
           </h1>
         </div>
         <div className="flex flex-col gap-8 lg:min-w-[50%]">
-          <div className="hidden lg:block bg-light-coral h-1 w-12"></div>
-          <p className="text-center lg:text-start text-white font-semibold text-fs-15 leading-lh-28  md:max-w-[457px] lg:w-full">
+          <div className="hidden h-1 w-12 bg-light-coral lg:block"></div>
+          <p className="text-center text-fs-15 font-semibold leading-lh-28 text-white md:max-w-[457px]  lg:w-full lg:text-start">
             We help companies build dynamic teams made up of top global talent.
             Using our network of passionate professionals we drive innovation
             and deliver incredible outcomes. Talented, diverse teams shape the
@@ -23,35 +23,35 @@ export default function About() {
         </div>
       </section>
       {/* directors */}
-      <section className="custom-about-dir1 px-6  py-28 md:custom-dir-md bg-green-jungle w-full flex flex-col items-center">
-        <h3 className="text-center text-white text-fs-32 leading-lh-32 lg:text-fs-48 lg:leading-lh-48 font-bold mb-12">
+      <section className="custom-about-dir1 md:custom-dir-md  flex w-full flex-col items-center bg-green-jungle px-6 py-28">
+        <h3 className="mb-12 text-center text-fs-32 font-bold leading-lh-32 text-white lg:text-fs-48 lg:leading-lh-48">
           Meet the directors
         </h3>
-        <div className="md:flex md:flex-wrap md:gap-6 md:justify-center 2xl:px-20 3xl:px-40">
+        <div className="md:flex md:flex-wrap md:justify-center md:gap-6 2xl:px-20 3xl:px-40">
           {DIRECTORS.map((item) => {
             let quotes = item.quotes;
             if (!quotes) {
               return (
                 <div
-                  className="relative w-[327px] h-[253px] flex flex-col items-center py-8 bg-green-sacramento mb-14"
+                  className="relative mb-14 flex h-[253px] w-[327px] flex-col items-center bg-green-sacramento py-8"
                   key={item.key}
                 >
                   <Image
-                    className="border-2 rounded-full border-blue-rapture"
+                    className="rounded-full border-2 border-blue-rapture"
                     src={`${item.url}`}
                     width={96}
                     height={96}
                     alt={`${item.name} avatar`}
                   />
-                  <p className="text-center text-blue-rapture text-fs-18 leading-lh-28 font-bold mt-2">
+                  <p className="mt-2 text-center text-fs-18 font-bold leading-lh-28 text-blue-rapture">
                     {item.name}
                   </p>
-                  <p className="italic text-white text-fs-15 leading-lh-25 font-medium mb-6">
+                  <p className="mb-6 text-fs-15 font-medium italic leading-lh-25 text-white">
                     {item.job}
                   </p>
-                  <div className="bg-light-coral cursor-pointer hover:bg-blue-rapture  hover:-rotate-45 p-5 rounded-full absolute -bottom-7">
+                  <div className="absolute -bottom-7 cursor-pointer  rounded-full bg-light-coral p-5 hover:-rotate-45 hover:bg-blue-rapture">
                     <svg
-                      className=" fill-green-sacramento rotate-45"
+                      className=" rotate-45 fill-green-sacramento"
                       xmlns="http://www.w3.org/2000/svg"
                       width="17"
                       height="17"
@@ -67,16 +67,16 @@ export default function About() {
             } else {
               return (
                 <div
-                  className="relative w-[327px] h-[253px] flex flex-col items-center py-8 px-11 bg-green-sacramento"
+                  className="relative flex h-[253px] w-[327px] flex-col items-center bg-green-sacramento px-11 py-8"
                   key={item.key}
                 >
-                  <p className="text-center text-blue-rapture text-fs-18 leading-lh-28 font-bold mb-2">
+                  <p className="mb-2 text-center text-fs-18 font-bold leading-lh-28 text-blue-rapture">
                     {item.name}
                   </p>
-                  <p className="text-center text-white text-fs-15 leading-lh-25 font-semibold">
+                  <p className="text-center text-fs-15 font-semibold leading-lh-25 text-white">
                     {item.quotes}
                   </p>
-                  <div className="flex gap-6 my-6">
+                  <div className="my-6 flex gap-6">
                     <Image
                       src={`${item.socialIcon?.twitter}`}
                       width={20}
@@ -90,7 +90,7 @@ export default function About() {
                       alt="linkdln icon"
                     />
                   </div>
-                  <div className="bg-blue-rapture p-5 rounded-full absolute -bottom-7 hover:bg-light-coral hover:-rotate-45 cursor-pointer">
+                  <div className="absolute -bottom-7 cursor-pointer rounded-full bg-blue-rapture p-5 hover:-rotate-45 hover:bg-light-coral">
                     <svg
                       className=" fill-green-sacramento"
                       xmlns="http://www.w3.org/2000/svg"
@@ -110,11 +110,11 @@ export default function About() {
         </div>
       </section>
       {/* clients sections */}
-      <section className="bg-green-sacramento about-bg3 md:about-bg3-md px-6 md:px-9 py-24 flex flex-col items-center">
-        <h3 className="text-center text-fs-32 leading-lh-32 font-bold text-white">
+      <section className="about-bg3 md:about-bg3-md flex flex-col items-center bg-green-sacramento px-6 py-24 md:px-9">
+        <h3 className="text-center text-fs-32 font-bold leading-lh-32 text-white">
           Some of our clients
         </h3>
-        <div className="flex flex-col md:flex-row items-center gap-14 mt-16">
+        <div className="mt-16 flex flex-col items-center gap-14 md:flex-row">
           {CLIENT.map((item) => (
             <div key={item.key}>
               <Image

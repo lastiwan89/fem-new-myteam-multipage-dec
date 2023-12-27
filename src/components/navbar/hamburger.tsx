@@ -18,9 +18,9 @@ export default function Hamburger({
           </g>
         </svg>
       ) : (
-        <div className="mobile-nav-bg flex flex-col w-80 gap-8 px-12 py-28 fixed top-0 right-0  overflow-y-hidden overflow-x-hidden transition-transform translate-x-4  duration-300 items-start justify-start h-screen bg-blue-police z-40">
+        <div className="mobile-nav-bg fixed right-0 top-0 z-40 flex h-screen w-3/4 translate-x-4 flex-col  items-start justify-start gap-8 overflow-x-hidden  overflow-y-hidden bg-blue-police px-12 py-28 transition-transform duration-300">
           <svg
-            className="absolute top-12 right-9"
+            className="absolute right-10 top-12"
             xmlns="http://www.w3.org/2000/svg"
             width="18"
             height="17"
@@ -32,19 +32,19 @@ export default function Hamburger({
             />
           </svg>
           <Link
-            className="text-white hover:text-light-coral text-fs-18 leading-lh-28 font-semibold"
+            className="text-fs-18 font-semibold leading-lh-28 text-white hover:text-light-coral"
             href="/"
           >
             home
           </Link>
           <Link
-            className="text-white hover:text-light-coral text-fs-18 leading-lh-28 font-semibold"
+            className="text-fs-18 font-semibold leading-lh-28 text-white hover:text-light-coral"
             href="/about"
           >
             about
           </Link>
           <Link
-            className="border-2 text-fs-h3-18 font-semibold leading-lh-18 px-8 py-2 rounded-full border-white text-white hover:bg-white hover:text-green-midnight"
+            className="text-fs-h3-18 rounded-full border-2 border-white px-8 py-2 font-semibold leading-lh-18 text-white hover:bg-white hover:text-green-midnight"
             href={`/contact`}
           >
             contact us

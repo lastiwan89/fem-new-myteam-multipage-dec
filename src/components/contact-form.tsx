@@ -35,11 +35,11 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-green-midnight p-6 pb-24 lg:pr-40 lg:py-28 md:px-32 lg:px-6 form-bg1 md:contact-md2 lg:min-w-[50%]"
+      className="form-bg1 md:contact-md2 bg-green-midnight p-6 pb-24 md:px-32 lg:min-w-[50%] lg:px-6 lg:py-28 lg:pr-40"
     >
-      <div className="flex flex-col gap-y-2 lg:gap-y-5 mb-6 lg:min-w-full">
+      <div className="mb-6 flex flex-col gap-y-2 lg:min-w-full lg:gap-y-5">
         <input
-          className="bg-green-midnight lg:py-4 text-fs-15 leading-lh-25 font-semibold w-full px-2 py-2 border-b-2 border-white"
+          className="w-full border-b-2 border-white bg-green-midnight px-2 py-2 text-fs-15 font-semibold leading-lh-25 lg:py-4"
           type="text"
           name="name"
           id="name"
@@ -48,7 +48,7 @@ export default function ContactForm() {
           value={formData.name}
         />
         <input
-          className="bg-green-midnight lg:py-4 text-fs-15 leading-lh-25 font-semibold w-full px-2 py-2 border-b-2 border-white"
+          className="w-full border-b-2 border-white bg-green-midnight px-2 py-2 text-fs-15 font-semibold leading-lh-25 lg:py-4"
           type="email"
           name="email"
           id="email"
@@ -57,7 +57,7 @@ export default function ContactForm() {
           value={formData.email}
         />
         <input
-          className="bg-green-midnight lg:py-4 text-fs-15 leading-lh-25 font-semibold w-full px-2 py-2 border-b-2 border-white"
+          className="w-full border-b-2 border-white bg-green-midnight px-2 py-2 text-fs-15 font-semibold leading-lh-25 lg:py-4"
           type="text"
           name="company"
           id="company"
@@ -66,7 +66,7 @@ export default function ContactForm() {
           value={formData.company}
         />
         <input
-          className="bg-green-midnight lg:py-4 text-fs-15 leading-lh-25 font-semibold w-full px-2 py-2 border-b-2 border-white"
+          className="w-full border-b-2 border-white bg-green-midnight px-2 py-2 text-fs-15 font-semibold leading-lh-25 lg:py-4"
           type="text"
           name="title"
           id="title"
@@ -75,7 +75,7 @@ export default function ContactForm() {
           value={formData.title}
         />
         <input
-          className="bg-green-midnight text-fs-15 leading-lh-25 font-semibold w-full px-2 pt-2 pb-12 border-b-2 border-white"
+          className="w-full border-b-2 border-white bg-green-midnight px-2 pb-12 pt-2 text-fs-15 font-semibold leading-lh-25"
           name="message"
           id="message"
           placeholder="Message"
@@ -84,7 +84,7 @@ export default function ContactForm() {
         />
       </div>
       <button
-        className="border-2 border-white bg-white text-fs-h3-18 font-semibold leading-lh-18 px-8 py-2 rounded-full"
+        className="text-fs-h3-18 rounded-full border-2 border-white bg-white px-8 py-2 font-semibold leading-lh-18"
         type="submit"
       >
         submit

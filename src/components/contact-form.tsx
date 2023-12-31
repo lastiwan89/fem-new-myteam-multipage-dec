@@ -39,7 +39,7 @@ export default function ContactForm() {
     >
       <div className="mb-6 flex flex-col gap-y-2 lg:min-w-full lg:gap-y-5">
         <input
-          className="w-full border-b-2 border-white bg-green-midnight px-2 py-2 text-fs-15 font-semibold leading-lh-25 lg:py-4"
+          className="w-full border-b-2 border-white px-2 py-2 text-fs-15 font-semibold leading-lh-25 lg:py-4"
           type="text"
           name="name"
           id="name"
@@ -48,7 +48,7 @@ export default function ContactForm() {
           value={formData.name}
         />
         <input
-          className="w-full border-b-2 border-white bg-green-midnight px-2 py-2 text-fs-15 font-semibold leading-lh-25 lg:py-4"
+          className="w-full border-b-2 border-white px-2 py-2 text-fs-15 font-semibold leading-lh-25 lg:py-4"
           type="email"
           name="email"
           id="email"
@@ -57,7 +57,7 @@ export default function ContactForm() {
           value={formData.email}
         />
         <input
-          className="w-full border-b-2 border-white bg-green-midnight px-2 py-2 text-fs-15 font-semibold leading-lh-25 lg:py-4"
+          className="w-full border-b-2 border-white px-2 py-2 text-fs-15 font-semibold leading-lh-25 lg:py-4"
           type="text"
           name="company"
           id="company"
@@ -66,7 +66,7 @@ export default function ContactForm() {
           value={formData.company}
         />
         <input
-          className="w-full border-b-2 border-white bg-green-midnight px-2 py-2 text-fs-15 font-semibold leading-lh-25 lg:py-4"
+          className="w-full border-b-2 border-white px-2 py-2 text-fs-15 font-semibold leading-lh-25 lg:py-4"
           type="text"
           name="title"
           id="title"
@@ -75,7 +75,7 @@ export default function ContactForm() {
           value={formData.title}
         />
         <input
-          className="w-full border-b-2 border-white bg-green-midnight px-2 pb-12 pt-2 text-fs-15 font-semibold leading-lh-25"
+          className="w-full border-b-2 border-white px-2 pb-12 pt-2 text-fs-15 font-semibold leading-lh-25"
           name="message"
           id="message"
           placeholder="Message"

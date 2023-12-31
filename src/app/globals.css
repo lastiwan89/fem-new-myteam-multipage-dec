@@ -6,14 +6,17 @@ body {
   min-height: 100vh;
   width: 100%;
 }
+input {
+  background: transparent;
+}
 
 /* custom */
 @layer utilities {
   .nav-cta {
-    @apply border-white text-white hover:bg-white hover:text-green-midnight hidden md:block;
+    @apply hidden border-white text-white hover:bg-white hover:text-green-midnight md:block;
   }
   .footer-cta {
-    @apply border-green-midnight text-green-midnight hover:text-white hover:bg-green-midnight;
+    @apply border-green-midnight text-green-midnight hover:bg-green-midnight hover:text-white;
   }
   /* custom background */
   .mobile-nav-bg {

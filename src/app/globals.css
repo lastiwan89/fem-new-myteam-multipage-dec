@@ -9,6 +9,9 @@ body {
 input {
   background: transparent;
 }
+input:focus {
+  outline: none;
+}
 
 /* custom */
 @layer utilities {

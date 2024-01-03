@@ -12,13 +12,13 @@ export default function Footer() {
           <Logo />
           <div className="flex gap-6">
             <Link
-              className="hover:text-coral text-fs-18 font-semibold leading-lh-28 text-white"
+              className="text-fs-18 font-semibold leading-lh-28 text-white hover:text-coral"
               href="/"
             >
               home
             </Link>
             <Link
-              className="hover:text-coral text-fs-18 font-semibold leading-lh-28 text-white"
+              className="text-fs-18 font-semibold leading-lh-28 text-white hover:text-coral"
               href="/about"
             >
               about
@@ -40,7 +40,7 @@ export default function Footer() {
         <div className="my-4 flex items-center justify-center gap-5 lg:my-0">
           {SOCIAL_ICONS.map((item) => (
             <Image
-              className="hover:text-coral cursor-pointer text-white"
+              className="cursor-pointer text-white hover:text-coral"
               key={item.key}
               src={`${item.url}`}
               width={24}

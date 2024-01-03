@@ -32,13 +32,13 @@ export default function Hamburger({
             />
           </svg>
           <Link
-            className="hover:text-coral text-fs-18 font-semibold leading-lh-28 text-white"
+            className="text-fs-18 font-semibold leading-lh-28 text-white hover:text-coral"
             href="/"
           >
             home
           </Link>
           <Link
-            className="hover:text-coral text-fs-18 font-semibold leading-lh-28 text-white"
+            className="text-fs-18 font-semibold leading-lh-28 text-white hover:text-coral"
             href="/about"
           >
             about

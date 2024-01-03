@@ -25,7 +25,7 @@ export default function Home() {
       {/* Team Section */}
       <section className="custom-team-md bg-green-sacramento bg-no-repeat px-6 py-16 md:px-24 md:py-28 lg:flex lg:justify-center lg:gap-28">
         <div className="w-[240px] md:w-[445px]">
-          <div className="bg-coral h-1 w-12"></div>
+          <div className="h-1 w-12 bg-coral"></div>
           <h1 className="mt-8 text-fs-32 font-bold leading-lh-32 text-white">
             Build & manage distributed teams like no one else.
           </h1>
@@ -46,7 +46,7 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col gap-4 md:mb-8 md:justify-center">
-                <h3 className="text-coral text-center text-fs-18 font-bold leading-lh-28 md:text-start">
+                <h3 className="text-center text-fs-18 font-bold leading-lh-28 text-coral md:text-start">
                   {team.label}
                 </h3>
                 <p className="text-center text-fs-15 font-semibold leading-lh-25 text-white md:text-start">

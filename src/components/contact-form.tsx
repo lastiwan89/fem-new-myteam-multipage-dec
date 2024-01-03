@@ -76,7 +76,7 @@ export default function ContactForm() {
             value={formData.name}
           />
           {isValid.name && (
-            <p className="text-coral text-end text-fs-13">{isValid.name}</p>
+            <p className="text-end text-fs-13 text-coral">{isValid.name}</p>
           )}
         </div>
         <div className="flex flex-col">
@@ -90,7 +90,7 @@ export default function ContactForm() {
             value={formData.email}
           />
           {isValid.email && (
-            <p className="text-coral text-end text-fs-13">{isValid.email}</p>
+            <p className="text-end text-fs-13 text-coral">{isValid.email}</p>
           )}
         </div>
         <div className="flex flex-col">
@@ -104,7 +104,7 @@ export default function ContactForm() {
             value={formData.company}
           />
           {isValid.company && (
-            <p className="text-coral text-end text-fs-13">{isValid.company}</p>
+            <p className="text-end text-fs-13 text-coral">{isValid.company}</p>
           )}
         </div>
         <div className="flex flex-col">
@@ -118,7 +118,7 @@ export default function ContactForm() {
             value={formData.title}
           />
           {isValid.title && (
-            <p className="text-coral text-end text-fs-13">{isValid.title}</p>
+            <p className="text-end text-fs-13 text-coral">{isValid.title}</p>
           )}
         </div>
         <div className="flex flex-col">
@@ -131,7 +131,7 @@ export default function ContactForm() {
             value={formData.message}
           />
           {isValid.message && (
-            <p className="text-coral text-end text-fs-13">{isValid.message}</p>
+            <p className="text-end text-fs-13 text-coral">{isValid.message}</p>
           )}
         </div>
       </div>

@@ -13,7 +13,7 @@ export default function About() {
           </h1>
         </div>
         <div className="flex flex-col gap-8 lg:min-w-[50%]">
-          <div className="hidden h-1 w-12 bg-light-coral lg:block"></div>
+          <div className="bg-coral hidden h-1 w-12 lg:block"></div>
           <p className="text-center text-fs-15 font-semibold leading-lh-28 text-white md:max-w-[457px]  lg:w-full lg:text-start">
             We help companies build dynamic teams made up of top global talent.
             Using our network of passionate professionals we drive innovation
@@ -37,6 +37,7 @@ export default function About() {
                   key={item.key}
                 >
                   <Image
+                    loading="lazy"
                     className="rounded-full border-2 border-blue-rapture"
                     src={`${item.url}`}
                     width={96}
@@ -49,7 +50,7 @@ export default function About() {
                   <p className="mb-6 text-fs-15 font-medium italic leading-lh-25 text-white">
                     {item.job}
                   </p>
-                  <div className="absolute -bottom-7 cursor-pointer  rounded-full bg-light-coral p-5 hover:-rotate-45 hover:bg-blue-rapture">
+                  <div className="bg-coral absolute -bottom-7  cursor-pointer rounded-full p-5 hover:-rotate-45 hover:bg-blue-rapture">
                     <svg
                       className=" rotate-45 fill-green-sacramento"
                       xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +91,7 @@ export default function About() {
                       alt="linkdln icon"
                     />
                   </div>
-                  <div className="absolute -bottom-7 cursor-pointer rounded-full bg-blue-rapture p-5 hover:-rotate-45 hover:bg-light-coral">
+                  <div className="hover:bg-coral absolute -bottom-7 cursor-pointer rounded-full bg-blue-rapture p-5 hover:-rotate-45">
                     <svg
                       className=" fill-green-sacramento"
                       xmlns="http://www.w3.org/2000/svg"

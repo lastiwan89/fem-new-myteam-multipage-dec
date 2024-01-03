@@ -7,29 +7,6 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      "green-midnight": "#014d56",
-      "green-jungle": "#004047",
-      "green-sacramento": "#012d32",
-      "green-dark": "#002529",
-
-      "blue-rapture": "#79c8c7",
-      "blue-police": "#2c6168",
-
-      white: "#ffffff",
-      "light-coral": "#f67e7e",
-    },
-    fontSize: {
-      "fs-100": "100px",
-      "fs-64": "64px",
-      "fs-48": "48px",
-      "fs-40": "40px",
-      "fs-32": "32px",
-      "fs-28": "28px",
-      "fs-18": "18px",
-      "fs-15": "15px",
-      "fs-13": "13px",
-    },
     fontWeight: {
       normal: "400",
       medium: "500",
@@ -44,6 +21,31 @@ const config: Config = {
       "3xl": "1536px" /* large display */,
     },
     extend: {
+      colors: {
+        green: {
+          midnight: "#014d56",
+          jungle: "#004047",
+          sacramento: "#012d32",
+          dark: "#002529",
+        },
+        blue: {
+          rapture: "#79c8c7",
+          police: "#2c6168",
+        },
+        white: "#ffffff",
+        coral: "#f67e7e",
+      },
+      fontSize: {
+        "fs-100": "100px",
+        "fs-64": "64px",
+        "fs-48": "48px",
+        "fs-40": "40px",
+        "fs-32": "32px",
+        "fs-28": "28px",
+        "fs-18": "18px",
+        "fs-15": "15px",
+        "fs-13": "13px",
+      },
       backgroundImage: {
         home1: "url('/bg-pattern-home-1.svg')",
         home2: "url('/bg-pattern-home-2.svg')",

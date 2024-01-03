@@ -75,10 +75,8 @@ export default function ContactForm() {
             onChange={handleChange}
             value={formData.name}
           />
-          {isValid && (
-            <p className="text-end text-fs-13 text-light-coral">
-              {isValid.name}
-            </p>
+          {isValid.name && (
+            <p className="text-coral text-end text-fs-13">{isValid.name}</p>
           )}
         </div>
         <div className="flex flex-col">
@@ -91,10 +89,8 @@ export default function ContactForm() {
             onChange={handleChange}
             value={formData.email}
           />
-          {isValid && (
-            <p className="text-end text-fs-13 text-light-coral">
-              {isValid.email}
-            </p>
+          {isValid.email && (
+            <p className="text-coral text-end text-fs-13">{isValid.email}</p>
           )}
         </div>
         <div className="flex flex-col">
@@ -107,10 +103,8 @@ export default function ContactForm() {
             onChange={handleChange}
             value={formData.company}
           />
-          {isValid && (
-            <p className="text-end text-fs-13 text-light-coral">
-              {isValid.company}
-            </p>
+          {isValid.company && (
+            <p className="text-coral text-end text-fs-13">{isValid.company}</p>
           )}
         </div>
         <div className="flex flex-col">
@@ -123,10 +117,8 @@ export default function ContactForm() {
             onChange={handleChange}
             value={formData.title}
           />
-          {isValid && (
-            <p className="text-end text-fs-13 text-light-coral">
-              {isValid.title}
-            </p>
+          {isValid.title && (
+            <p className="text-coral text-end text-fs-13">{isValid.title}</p>
           )}
         </div>
         <div className="flex flex-col">
@@ -138,10 +130,8 @@ export default function ContactForm() {
             onChange={handleChange}
             value={formData.message}
           />
-          {isValid && (
-            <p className="text-end text-fs-13 text-light-coral">
-              {isValid.message}
-            </p>
+          {isValid.message && (
+            <p className="text-coral text-end text-fs-13">{isValid.message}</p>
           )}
         </div>
       </div>

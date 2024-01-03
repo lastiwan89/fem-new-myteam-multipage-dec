@@ -1,6 +1,7 @@
 import ContactForm from "@/components/contact-form";
 import { TEAMS } from "@/constant";
 import Image from "next/image";
+import { Suspense } from "react";
 
 export default function Contact() {
   return (
@@ -10,7 +11,7 @@ export default function Contact() {
           <h1 className="text-center text-fs-40 font-bold leading-lh-40 text-white md:text-fs-64 md:leading-lh-56 lg:text-start lg:text-fs-64 lg:leading-lh-100">
             Contact
           </h1>
-          <h3 className="mt-4 text-center text-fs-32 font-bold leading-lh-48 text-light-coral lg:text-start">
+          <h3 className="text-coral mt-4 text-center text-fs-32 font-bold leading-lh-48 lg:text-start">
             Ask us about
           </h3>
         </div>
@@ -34,7 +35,9 @@ export default function Contact() {
         </div>
       </section>
       {/* form */}
-      <ContactForm />
+      <Suspense>
+        <ContactForm />
+      </Suspense>
     </main>
   );
 }

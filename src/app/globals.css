@@ -2,15 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  min-height: 100vh;
-  width: 100%;
-}
-input {
-  background: transparent;
-}
-input:focus {
-  outline: none;
+@layer base {
+  /* add in base layer */
+  body {
+    min-height: 100vh;
+    width: 100%;
+  }
+  input {
+    background: transparent;
+  }
+  input:focus {
+    outline: none;
+  }
 }
 
 /* custom */

@@ -1,7 +1,8 @@
-import ContactForm from "@/components/contact-form";
+import ZodForm from "@/components/form-react-hook-zod";
 import { TEAMS } from "@/constant";
 import Image from "next/image";
 import { Suspense } from "react";
+// import ContactForm from "@/components/contact-form";
 
 export default function Contact() {
   return (
@@ -36,7 +37,8 @@ export default function Contact() {
       </section>
       {/* form */}
       <Suspense>
-        <ContactForm />
+        {/* <ContactForm /> */}
+        <ZodForm />
       </Suspense>
     </main>
   );
